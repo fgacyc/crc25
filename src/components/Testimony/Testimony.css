@@ -1,0 +1,140 @@
+.testimony-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(to bottom, #0000003a, #000000);
+  overflow: hidden;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  width: 100%;
+  position: relative;
+}
+
+.testimonial-card {
+  margin-bottom: 1.5rem;
+  position: relative;
+  transition: transform 0.5s ease-out;
+}
+
+.testimonial-profile-image {
+  min-width: 322px;
+  min-height: 357px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-introduction-image {
+  width: 100%;
+  height: auto;
+}
+
+.testimonial-card p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.testimonial-card h4 {
+  margin: 0.5rem 0;
+}
+
+.testimonial-description {
+  text-align: left;
+  line-height: 1.6;
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
+  color: white;
+}
+
+.testimonial-description p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.testimonial-description li {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+.testimonial-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.testimonials-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .testimony-section {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    min-height: 1000px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: none;
+    gap: 1rem;
+    min-height: auto;
+    overflow: hidden;
+  }
+
+  .testimonial-card {
+    margin-bottom: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-profile-image {
+    width: 100%;
+    height: auto;
+    max-width: 360px;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+
+  .testimonial-introduction-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+
+  .testimonial-card p {
+    font-size: 18px;
+  }
+
+  .testimonial-description {
+    font-size: 12px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+}
+
+.testimony-header-image {
+  width: 100%;
+  max-width: 200px;
+  margin: 1rem auto;
+  /* Add any additional styling you need */
+}

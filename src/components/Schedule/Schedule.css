@@ -1,0 +1,160 @@
+.schedule-main-container {
+  background: #000;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-top: 100px;
+}
+
+.schedule-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 80vh;
+  background-image: url("/bg-3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  padding-top: 100px;
+}
+
+.schedule-title {
+  width: 350px;
+  object-fit: contain;
+}
+
+.schedule-subtitle {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.schedule-card {
+  width: 100%;
+  color: white;
+  min-height: 600px;
+  margin: 0;
+  transition: transform 0.5s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 90%;
+  max-width: 1200px;
+  padding: 2rem;
+  position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  .schedule-container {
+    border-radius: 180px 180px 0 0;
+  }
+
+  .schedule-grid {
+    grid-template-columns: 1fr;
+    width: 90%;
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+  }
+
+  .schedule-title {
+    width: 75%;
+  }
+
+  .schedule-card {
+    animation: fadeIn 0.5s ease-out;
+    height: 500px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.day-title {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  text-decoration: underline;
+}
+
+.schedule-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.schedule-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.2rem;
+}
+
+.time {
+  min-width: 80px;
+}
+
+.dash {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.event {
+  font-family: "SimSun", serif;
+}
+
+.schedule-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 480px) {
+}
+
+.desktop-view {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+.mobile-view {
+  display: none;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 480px) {
+  .desktop-view {
+    display: none;
+  }
+
+  .mobile-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.schedule-day-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
